@@ -70,7 +70,7 @@ ${data.test}
 ## License
 ${renderLicenseSection(data.license)}
 ## Github
-Checkout my github here ${data.username}
+Checkout my github here  https://github.com/${data.username}
 ## Contact
 If you have any questions please email me at ${data.email}
 

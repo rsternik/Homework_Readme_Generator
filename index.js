@@ -9,24 +9,52 @@ const questions = [
         input: 'input',
         message: 'Enter project title',
         name: 'title',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
         input: 'input',
         message: 'Enter project description',
         name: 'description',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
         input: 'input',
         message: 'Enter installation instructions',
         name: 'installation',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
         input: 'input',
         message: 'Enter usage information',
         name: 'usage',
+         validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
@@ -34,25 +62,67 @@ const questions = [
         type: 'list',
         message: 'Choose your license.',
         choices: ['GNU LGPLv3', 'APACHE 2.0', 'MPL 2.0', 'unlicensed'],
-        name: 'license'
+        name: 'license',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
         input: 'input',
         message: 'Enter github your username.',
         name: 'username',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
         input: 'input',
         message: 'Enter your email address.',
         name: 'email',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     },
 
     {
         input: 'input',
-        message: 'Enter contribution requirements if applicable.',
+        message: 'Enter contribution requirements.',
         name: 'contribution',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
+        
+    },
+
+    {
+        input: 'input',
+        message: 'Enter test instructions',
+        name: 'test',
+        validate: (response) => {
+            if (!response) {
+                console.log('Entry can nnot be blank.')
+            } else {
+                return true
+            }
+        }
     }
 ];
 
