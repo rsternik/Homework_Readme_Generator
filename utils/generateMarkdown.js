@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
     'unlicensed': '',
 
   }
-
+  return badges[license]
 }
 
 // TODO: Create a function that returns the license link
@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
     'unlicensed': '',
 
   }
-
+  return licenseUrl[license]
 }
 
 // TODO: Create a function that returns the license section of README
@@ -55,6 +55,7 @@ function generateMarkdown(data) {
 5. [Test](#test)
 6. [License](#test)
 7. [Github](#github)
+
 ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
@@ -69,9 +70,9 @@ ${data.test}
 ## License
 ${renderLicenseSection(data.license)}
 ## Github
-Checkout my github here ${data.github}
+Checkout my github here ${data.username}
 ## Contact
-IF you have any questions please email me at ${data.email}
+If you have any questions please email me at ${data.email}
 
 `;
 }

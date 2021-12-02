@@ -31,9 +31,9 @@ const questions = [
 
     {
 
-        type: "list",
+        type: 'list',
         message: 'Choose your license.',
-        choices: ["choice 1", "choice 2"],
+        choices: ['GNU LGPLv3', 'APACHE 2.0', 'MPL 2.0', 'unlicensed'],
         name: 'license'
     },
 
@@ -49,6 +49,11 @@ const questions = [
         name: 'email',
     },
 
+    {
+        input: 'input',
+        message: 'Enter contribution requirements if applicable.',
+        name: 'contribution',
+    }
 ];
 
 // TODO: Create a function to write README file
